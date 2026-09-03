@@ -2,13 +2,14 @@
 title: 用 Obsidian 更新本站
 category: 站点
 date: 2026-09-03
-tags: [Obsidian, GitHub Pages]
-thumb: assets/blog-workflow.svg
+tags:
+  - Obsidian
+thumb: assets/obsidian.svg
 excerpt: 本站的每篇文章就是一个 Markdown 文件。在 Obsidian 里写好保存，Obsidian Git 插件自动推送到 GitHub，GitHub Actions 构建后由 Pages 发布。
 ---
 
 纯静态主页：没有后台、没有数据库，**文章就是 Markdown 文件**。
-![](assets/blog-workflow.svg)
+![](obsidian.svg)
 
 *图 1：从 Obsidian 写作到 GitHub Pages 上线的完整流程*
 
